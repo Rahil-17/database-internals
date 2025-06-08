@@ -54,6 +54,7 @@ func (rle *RLE) appendRow(row Row) {
 		rle.tsRunEnds[len(rle.tsRunEnds)-1]++
 	}
 }
+
 func (t TSRun) String() string {
 	return fmt.Sprintf("{TS: %s, Count: %d}", t.ts, t.count)
 }
