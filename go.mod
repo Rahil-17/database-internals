@@ -1,6 +1,6 @@
-module rle
+module github.com/rahil/database-internals
 
-go 1.22.1
+go 1.23.9
 
 require github.com/stretchr/testify v1.10.0
 

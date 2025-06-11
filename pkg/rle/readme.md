@@ -78,7 +78,7 @@ In this Go implementation, RLE is applied to time-series data. The program simul
 
 - **Prefix Sum**: The `tsRunEnds` slice keeps a cumulative count of the total number of rows across all RLE-encoded timestamps. This helps in efficiently finding the corresponding `ts` for a given row ID using binary search.
 
-- **Binary Search**: The `getTSFromRowIDFaster` function uses binary search on the `tsRunEnds` to quickly locate the timestamp corresponding to a given row ID. This is an efficient approach for large datasets.
+- **Binary Search**: The `GetTSFromRowIDFaster` function uses binary search on the `tsRunEnds` to quickly locate the timestamp corresponding to a given row ID. This is an efficient approach for large datasets.
 
 ---
 
